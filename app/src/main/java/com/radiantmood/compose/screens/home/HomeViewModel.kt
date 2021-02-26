@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit
 
 data class HomeScreenModel(val message: String) : FinishedModelContainer<HomeScreenModel>()
 
-class HomeViewModel: ViewModel() {
+class HomeViewModel : ViewModel() {
     private val _screenModel = MutableLiveData<ModelContainer<HomeScreenModel>>()
     val screenModel: LiveData<ModelContainer<HomeScreenModel>> = _screenModel
 

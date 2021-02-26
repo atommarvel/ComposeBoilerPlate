@@ -10,6 +10,6 @@ fun NavGraphBuilder.composableScreen(composableScreen: ComposableScreen) {
     composable(composableScreen.route, composableScreen.arguments, composableScreen.deepLinks, composableScreen.content)
 }
 
-fun NavHostController.navigate(composableScreen: ComposableScreen, builder: NavOptionsBuilder.() -> Unit = {} ) {
+fun NavHostController.navigate(composableScreen: ComposableScreen, builder: NavOptionsBuilder.() -> Unit = {}) {
     navigate(composableScreen.route, builder)
 }
