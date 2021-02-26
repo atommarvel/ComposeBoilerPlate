@@ -20,7 +20,7 @@ class HomeViewModel: ViewModel() {
     fun fetch() {
         _screenModel.value = LoadingModelContainer()
         viewModelScope.launch {
-            delay(TimeUnit.SECONDS.toMillis(5))
+            delay(TimeUnit.SECONDS.toMillis(3))
             _screenModel.postValue(HomeScreenModel("This is your home screen!"))
         }
     }
